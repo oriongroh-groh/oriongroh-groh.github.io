@@ -69,45 +69,57 @@
   </p>
 
   <ul id="lista-paises">
-    <li><a href="#franca">🇫🇷 França</a></li>
-    <li><a href="#italia">🇮🇹 Itália</a></li>
-    <li><a href="#brasil">🇧🇷 Brasil</a></li>
-    <li><a href="#alemanha">🇩🇪 Alemanha</a></li>
-    <li><a href="#chile">🇨🇱 Chile</a></li>
-    <li><a href="#egito">🇪🇬 Egito</a></li>
-    <li><a href="#espanha">🇪🇸 Espanha</a></li>
-    <li><a href="#eua">🇺🇸 EUA</a></li>
-    <li><a href="#grecia">🇬🇷 Grécia</a></li>
-    <li><a href="#israel">🇮🇱 Israel</a></li>
-    <li><a href="#portugal">🇵🇹 Portugal</a></li>
-    <li><a href="#suica">🇨🇭 Suíça</a></li>
-    <li><a href="#turquia">🇹🇷 Turquia</a></li>
+    <li><a href="#franca"><img src="images/franca.png" style="width:20px; vertical-align:middle; margin-right:8px;">França</a></li>
+    
+    <li><a href="#italia"><img src="images/italia.png" style="width:20px; vertical-align:middle; margin-right:8px;">Itália</a></li>
+    
+    <li><a href="#brasil"><img src="images/brasil.png" style="width:20px; vertical-align:middle; margin-right:8px;">Brasil</a></li>
+    
+    <li><a href="#alemanha"><img src="images/alemanha.png" style="width:20px; vertical-align:middle; margin-right:8px;">Alemanha</a></li>
+    
+    <li><a href="#chile"><img src="images/chile.png" style="width:20px; vertical-align:middle; margin-right:8px;">Chile</a></li>
+    
+    <li><a href="#egito"><img src="images/egito.png" style="width:20px; vertical-align:middle; margin-right:8px;">Egito</a></li>
+    
+    <li><a href="#espanha"><img src="images/espanha.jpg" style="width:20px; vertical-align:middle; margin-right:8px;">Espanha</a></li>
+    
+    <li><a href="#eua"><img src="images/eua.png" style="width:20px; vertical-align:middle; margin-right:8px;">EUA</a></li>
+    
+    <li><a href="#grecia"><img src="images/grecia.png" style="width:20px; vertical-align:middle; margin-right:8px;">Grécia</a></li>
+    
+    <li><a href="#israel"><img src="images/israel.png" style="width:20px; vertical-align:middle; margin-right:8px;">Israel</a></li>
+    
+    <li><a href="#portugal"><img src="images/portugal.jpg" style="width:20px; vertical-align:middle; margin-right:8px;">Portugal</a></li>
+    
+    <li><a href="#suica"><img src="images/suica.png" style="width:20px; vertical-align:middle; margin-right:8px;">Suíça</a></li>
+    
+    <li><a href="#turquia"><img src="images/turquia.jpg" style="width:20px; vertical-align:middle; margin-right:8px;">Turquia</a></li>
   </ul>
 
+  <!-- SCRIPT BUSCA -->
   <script>
-  function ativarBusca() {
-    const busca = document.getElementById("busca");
-    const lista = document.getElementById("lista-paises");
+    function ativarBusca() {
+      const busca = document.getElementById("busca");
+      const lista = document.getElementById("lista-paises");
 
-    if (!busca || !lista) return;
+      if (!busca || !lista) return;
 
-    const itens = lista.getElementsByTagName("li");
+      const itens = lista.getElementsByTagName("li");
 
-    busca.addEventListener("keyup", function() {
-      let filtro = busca.value.toLowerCase();
+      busca.addEventListener("keyup", function() {
+        let filtro = busca.value.toLowerCase();
 
-      for (let i = 0; i < itens.length; i++) {
-        let texto = itens[i].textContent.toLowerCase();
+        for (let i = 0; i < itens.length; i++) {
+          let texto = itens[i].textContent.toLowerCase();
 
-        itens[i].style.display = texto.includes(filtro) ? "" : "none";
-      }
-    });
-  }
+          itens[i].style.display = texto.includes(filtro) ? "" : "none";
+        }
+      });
+    }
 
-  // roda várias vezes pra garantir (hack simples e funciona)
-  setInterval(ativarBusca, 1000);
-</script>
-	
+    setInterval(ativarBusca, 1000);
+  </script>
+
 </article>
 						
   <!-- França -->
