@@ -52,38 +52,60 @@
 	                            <p>Aqui você encontra roteiros completos e dicas práticas para explorar os melhores destinos do mundo.</p>
                             </article>
 
-						<!-- Destinos -->
-  <article id="destinos">
+<!-- Destinos -->
+<article id="destinos">
 
+  <!-- IMAGEM MAIS LARGA -->
   <span class="image main">
-    <img src="images/destinos.jpg" alt="Destinos" style="max-height: 200px; object-fit: cover;" />
-</span>
+    <img src="images/destinos.jpg" alt="Destinos" style="width:100%; height:300px; object-fit:cover;" />
+  </span>
 
   <h2 class="major">Destinos</h2>
 
-  <p>Escolha um país:</p>
+  <!-- PESQUISA -->
+  <p>
+    Escolha um país:
+    <input type="text" id="busca" placeholder="Pesquisar..." style="margin-left:10px; padding:5px;">
+  </p>
 
-  <ul>
-    <li><a href="#franca">
-    <img src="images/flags/franca.png" style="width:20px; vertical-align:middle; margin-right:8px;">
-    França
-  </a></li>
-    <li><a href="#italia">Itália</a></li>
-    <li><a href="#brasil">Brasil</a></li>
-	<li><a href="#alemanha">Alemanha</a></li>
-	<li><a href="#chile">Chile</a></li>
-	<li><a href="#egito">Egito</a></li>
-	<li><a href="#espanha">Espanha</a></li>
-	<li><a href="#eua">EUA</a></li>
-	<li><a href="#grecia">Grecia</a></li>
-	<li><a href="#israel">Israel</a></li>
-	<li><a href="#portugal">Portugal</a></li>
-	<li><a href="#suiça">Suiça</a></li>
-	<li><a href="#turquia">Turquia</a></li>
+  <ul id="lista-paises">
+    <li><a href="#franca">🇫🇷 França</a></li>
+    <li><a href="#italia">🇮🇹 Itália</a></li>
+    <li><a href="#brasil">🇧🇷 Brasil</a></li>
+    <li><a href="#alemanha">🇩🇪 Alemanha</a></li>
+    <li><a href="#chile">🇨🇱 Chile</a></li>
+    <li><a href="#egito">🇪🇬 Egito</a></li>
+    <li><a href="#espanha">🇪🇸 Espanha</a></li>
+    <li><a href="#eua">🇺🇸 EUA</a></li>
+    <li><a href="#grecia">🇬🇷 Grécia</a></li>
+    <li><a href="#israel">🇮🇱 Israel</a></li>
+    <li><a href="#portugal">🇵🇹 Portugal</a></li>
+    <li><a href="#suica">🇨🇭 Suíça</a></li>
+    <li><a href="#turquia">🇹🇷 Turquia</a></li>
   </ul>
 
-</article>
+  <!-- SCRIPT DENTRO DO ARTICLE -->
+  <script>
+    const busca = document.getElementById("busca");
+    const lista = document.getElementById("lista-paises").getElementsByTagName("li");
 
+    busca.addEventListener("keyup", function() {
+      let filtro = busca.value.toLowerCase();
+
+      for (let i = 0; i < lista.length; i++) {
+        let texto = lista[i].textContent.toLowerCase();
+
+        if (texto.includes(filtro)) {
+          lista[i].style.display = "";
+        } else {
+          lista[i].style.display = "none";
+        }
+      }
+    });
+  </script>
+
+</article>
+						
   <!-- França -->
   <article id="franca">
     <h2 class="major">🇫🇷 França</h2>
