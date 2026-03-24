@@ -84,26 +84,30 @@
     <li><a href="#turquia">🇹🇷 Turquia</a></li>
   </ul>
 
-  <!-- SCRIPT DENTRO DO ARTICLE -->
   <script>
+  function ativarBusca() {
     const busca = document.getElementById("busca");
-    const lista = document.getElementById("lista-paises").getElementsByTagName("li");
+    const lista = document.getElementById("lista-paises");
+
+    if (!busca || !lista) return;
+
+    const itens = lista.getElementsByTagName("li");
 
     busca.addEventListener("keyup", function() {
       let filtro = busca.value.toLowerCase();
 
-      for (let i = 0; i < lista.length; i++) {
-        let texto = lista[i].textContent.toLowerCase();
+      for (let i = 0; i < itens.length; i++) {
+        let texto = itens[i].textContent.toLowerCase();
 
-        if (texto.includes(filtro)) {
-          lista[i].style.display = "";
-        } else {
-          lista[i].style.display = "none";
-        }
+        itens[i].style.display = texto.includes(filtro) ? "" : "none";
       }
     });
-  </script>
+  }
 
+  // roda várias vezes pra garantir (hack simples e funciona)
+  setInterval(ativarBusca, 1000);
+</script>
+	
 </article>
 						
   <!-- França -->
