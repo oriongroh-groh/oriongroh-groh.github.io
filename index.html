@@ -55,148 +55,170 @@
 <!-- Destinos -->
 <article id="destinos">
 
-  <!-- IMAGEM MAIS LARGA -->
   <span class="image main">
     <img src="images/destinos.jpg" alt="Destinos" style="width:100%; height:300px; object-fit:cover;" />
   </span>
 
   <h2 class="major">Destinos</h2>
 
-  <!-- PESQUISA -->
   <p>
     Escolha um país:
     <input type="text" id="busca" placeholder="Pesquisar..." style="margin-left:10px; padding:5px;">
   </p>
 
   <ul id="lista-paises">
-    <li><a href="#franca"><img src="/images/franca.png" style="width:20px; vertical-align:middle; margin-right:8px;">França</a></li>
-    
-    <li><a href="#italia"><img src="/images/italia.png" style="width:20px; vertical-align:middle; margin-right:8px;">Itália</a></li>
-    
-    <li><a href="#brasil"><img src="/images/brasil.png" style="width:20px; vertical-align:middle; margin-right:8px;">Brasil</a></li>
-    
-    <li><a href="#alemanha"><img src="/images/alemanha.png" style="width:20px; vertical-align:middle; margin-right:8px;">Alemanha</a></li>
-    
-    <li><a href="#chile"><img src="/images/chile.png" style="width:20px; vertical-align:middle; margin-right:8px;">Chile</a></li>
-    
-    <li><a href="#egito"><img src="/images/egito.png" style="width:20px; vertical-align:middle; margin-right:8px;">Egito</a></li>
-    
-    <li><a href="#espanha"><img src="/images/espanha.jpg" style="width:20px; vertical-align:middle; margin-right:8px;">Espanha</a></li>
-    
-    <li><a href="#eua"><img src="/images/eua.png" style="width:20px; vertical-align:middle; margin-right:8px;">EUA</a></li>
-    
-    <li><a href="#grecia"><img src="/images/grecia.png" style="width:20px; vertical-align:middle; margin-right:8px;">Grécia</a></li>
-    
-    <li><a href="#israel"><img src="/images/israel.png" style="width:20px; vertical-align:middle; margin-right:8px;">Israel</a></li>
-    
-    <li><a href="#portugal"><img src="/images/portugal.jpg" style="width:20px; vertical-align:middle; margin-right:8px;">Portugal</a></li>
-    
-    <li><a href="#suica"><img src="/images/suica.png" style="width:20px; vertical-align:middle; margin-right:8px;">Suíça</a></li>
-    
-    <li><a href="#turquia"><img src="/images/turquia.jpg" style="width:20px; vertical-align:middle; margin-right:8px;">Turquia</a></li>
+    <li><a href="#franca"><img src="images/franca.png" style="width:20px; margin-right:8px;">França</a></li>
+    <li><a href="#italia"><img src="images/italia.png" style="width:20px; margin-right:8px;">Itália</a></li>
+    <li><a href="#brasil"><img src="images/brasil.png" style="width:20px; margin-right:8px;">Brasil</a></li>
+    <li><a href="#alemanha"><img src="images/alemanha.png" style="width:20px; margin-right:8px;">Alemanha</a></li>
+    <li><a href="#grecia"><img src="images/grecia.png" style="width:20px; margin-right:8px;">Grécia</a></li>
   </ul>
 
-  <!-- SCRIPT BUSCA -->
-  <script>
-    function ativarBusca() {
-      const busca = document.getElementById("busca");
-      const lista = document.getElementById("lista-paises");
-
-      if (!busca || !lista) return;
-
-      const itens = lista.getElementsByTagName("li");
-
-      busca.addEventListener("keyup", function() {
-        let filtro = busca.value.toLowerCase();
-
-        for (let i = 0; i < itens.length; i++) {
-          let texto = itens[i].textContent.toLowerCase();
-
-          itens[i].style.display = texto.includes(filtro) ? "" : "none";
-        }
-      });
-    }
-
-    setInterval(ativarBusca, 1000);
-  </script>
-
 </article>
-						
-  <!-- França -->
-  <article id="franca">
-    <h2 class="major">
-		<img src="./images/franca.png" style="width:25px; vertical-align:middle; margin-right:10px;">
-    França
-  </h2>
-	  
-    <ul>
-      <li><a href="#paris">Paris - 5 dias</a></li>
-    </ul>
-  </article>
 
-  <!-- Itália -->
-  <article id="italia">
+<!-- ================= BRASIL ================= -->
+<article id="brasil">
   <h2 class="major">
-    <img src="images/italia.png" style="width:25px; vertical-align:middle; margin-right:10px;">
-    Itália
-  </h2>
-  <ul>
-    <li><a href="#roma">Roma - 4 dias</a></li>
-  </ul>
-</article>
-						
-  <!-- Brasil -->
-  <article id="brasil">
-  <h2 class="major">
-    <img src="./images/brasil.png" style="width:25px; vertical-align:middle; margin-right:10px;">
+    <img src="images/brasil.png" style="width:25px; margin-right:10px;">
     Brasil
   </h2>
+
   <ul>
-    <li><a href="#rio">Rio de Janeiro RJ - 3 dias</a></li>
-    <li><a href="#campings">Campings e contatos SC (LITORAL)</a></li>
-    <li><a href="#curitiba">Curitiba SC - 2 dias</a></li>
-    <li><a href="#curitibaarredores">Curitiba e Arredores SC - 7 dias</a></li>
-    <li><a href="#doutorpedrinho">Doutor Pedrinho SC - 1 dia</a></li>
-    <li><a href="#fozdoiguacu">Foz do Iguaçu SC - 7 dias</a></li>
-    <li><a href="#torrespraiagrande">Torres e Praia Grande SC - 2 dias</a></li>
-    <li><a href="#serrariodorastro">Serra Rio do Rastro SC - 2 dias</a></li>
-    <li><a href="#valeeuropeu">Vale Europeu SC - 3 dias</a></li>
-    <li><a href="#gramadocaxiascanela">Gramado, Caxias, Canela RS - 9 dias</a></li>
-    <li><a href="#maranhao">Maranhão MA - 7 dias</a></li>
+    <li><a href="#rio">Rio de Janeiro - 3 dias</a></li>
+    <li><a href="#floripa">Florianópolis - 4 dias</a></li>
+    <li><a href="#foz">Foz do Iguaçu - 3 dias</a></li>
+    <li><a href="#gramado">Gramado - 3 dias</a></li>
+    <li><a href="#maranhao">Lençóis Maranhenses - 4 dias</a></li>
   </ul>
 </article>
-						
- <!-- Alemanha -->
+
+<!-- RIO -->
+<article id="rio">
+  <h2 class="major">Rio de Janeiro</h2>
+
+  <h3>Dia 1</h3>
+  <ul>
+    <li>Cristo Redentor</li>
+    <li>Pão de Açúcar</li>
+  </ul>
+
+  <h3>Dia 2</h3>
+  <ul>
+    <li>Praia de Copacabana</li>
+    <li>Ipanema</li>
+  </ul>
+
+  <h3>Dia 3</h3>
+  <ul>
+    <li>Escadaria Selarón</li>
+    <li>Lapa</li>
+  </ul>
+</article>
+
+<!-- ================= ITÁLIA ================= -->
+<article id="italia">
+  <h2 class="major">
+    <img src="images/italia.png" style="width:25px; margin-right:10px;">
+    Itália
+  </h2>
+
+  <ul>
+    <li><a href="#roma">Roma - 4 dias</a></li>
+    <li><a href="#veneza">Veneza - 2 dias</a></li>
+    <li><a href="#florenca">Florença - 3 dias</a></li>
+    <li><a href="#milao">Milão - 2 dias</a></li>
+    <li><a href="#napoles">Nápoles - 3 dias</a></li>
+  </ul>
+</article>
+
+<!-- ROMA -->
+<article id="roma">
+  <h2 class="major">Roma</h2>
+
+  <h3>Dia 1</h3>
+  <ul>
+    <li>Coliseu</li>
+    <li>Fórum Romano</li>
+  </ul>
+
+  <h3>Dia 2</h3>
+  <ul>
+    <li>Vaticano</li>
+    <li>Capela Sistina</li>
+  </ul>
+
+  <h3>Dia 3</h3>
+  <ul>
+    <li>Fontana di Trevi</li>
+    <li>Panteão</li>
+  </ul>
+</article>
+
+<!-- ================= ALEMANHA ================= -->
 <article id="alemanha">
   <h2 class="major">
-    <img src="./images/alemanha.png" style="width:25px; vertical-align:middle; margin-right:10px;">
+    <img src="images/alemanha.png" style="width:25px; margin-right:10px;">
     Alemanha
   </h2>
-  
+
   <ul>
-    <li><a href="#berlin">Berlin - 5 dias</a></li>
-    <li><a href="#dresden">Dresden - 5 dias</a></li>
-    <li><a href="#nuremberg">Nuremberg - 5 dias</a></li>
+    <li><a href="#berlim">Berlim - 3 dias</a></li>
+    <li><a href="#munique">Munique - 3 dias</a></li>
+    <li><a href="#hamburgo">Hamburgo - 2 dias</a></li>
+    <li><a href="#colonia">Colônia - 2 dias</a></li>
+    <li><a href="#frankfurt">Frankfurt - 2 dias</a></li>
   </ul>
 </article>
 
+<!-- BERLIM -->
+<article id="berlim">
+  <h2 class="major">Berlim</h2>
 
-  <!-- Roteiros -->
-  <article id="paris">
-    <h2 class="major">Paris - 5 dias</h2>
-    <p>Roteiro completo aqui...</p>
-  </article>
+  <h3>Dia 1</h3>
+  <ul>
+    <li>Portão de Brandemburgo</li>
+    <li>Reichstag</li>
+  </ul>
 
-  <article id="roma">
-    <h2 class="major">Roma - 4 dias</h2>
-    <p>Roteiro completo aqui...</p>
-  </article>
+  <h3>Dia 2</h3>
+  <ul>
+    <li>Muro de Berlim</li>
+    <li>Museu Pergamon</li>
+  </ul>
+</article>
 
-  <article id="rio">
-    <h2 class="major">Rio de Janeiro - 3 dias</h2>
-    <p>Roteiro completo aqui...</p>
-  </article>
+<!-- ================= GRÉCIA ================= -->
+<article id="grecia">
+  <h2 class="major">
+    <img src="images/grecia.png" style="width:25px; margin-right:10px;">
+    Grécia
+  </h2>
 
+  <ul>
+    <li><a href="#atenas">Atenas - 3 dias</a></li>
+    <li><a href="#santorini">Santorini - 3 dias</a></li>
+    <li><a href="#mykonos">Mykonos - 2 dias</a></li>
+    <li><a href="#creta">Creta - 4 dias</a></li>
+    <li><a href="#alexandria">Alexandria - 2 dias</a></li>
+  </ul>
+</article>
+
+<!-- ATENAS -->
+<article id="atenas">
+  <h2 class="major">Atenas</h2>
+
+  <h3>Dia 1</h3>
+  <ul>
+    <li>Acrópole</li>
+    <li>Partenon</li>
+  </ul>
+
+  <h3>Dia 2</h3>
+  <ul>
+    <li>Ágora Antiga</li>
+    <li>Museu Nacional</li>
+  </ul>
+</article>
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">Sobre</h2>
