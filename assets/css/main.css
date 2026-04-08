@@ -1660,12 +1660,17 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-.titulo-roteiro {
+#riodejaneiroserracabo .titulo-roteiro {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 60px;
+  right: 30px;
   text-align: right;
   color: #fff;
   letter-spacing: 3px;
-  font-weight: 300;
+  z-index: 2;
+}
+
+#riodejaneiroserracabo .major.titulo-roteiro {
+  position: absolute !important;
+}
 }
