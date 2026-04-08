@@ -1662,10 +1662,11 @@ input, select, textarea {
 
 #riodejaneiroserracabo .titulo-roteiro {
   position: absolute;
-  top: 60px;
-  right: 30px;
-  left: auto;            /* 🔥 força sair da esquerda */
+  top: 20px;
+  right: 0;
+  width: 100%;            /* 🔥 libera ocupar toda largura */
   text-align: right;
+  padding-right: 30px;    /* espaço da borda */
   color: #fff;
   letter-spacing: 3px;
   z-index: 10;
