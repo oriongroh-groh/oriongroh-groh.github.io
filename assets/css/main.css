@@ -1664,20 +1664,19 @@ input, select, textarea {
   position: absolute;
   top: 20px;
   right: 0;
-  width: 100%;            /* 🔥 libera ocupar toda largura */
+  width: 100%;          
   text-align: right;
-  padding-right: 30px;    /* espaço da borda */
+  padding-right: 30px;
   color: #fff;
   letter-spacing: 3px;
   z-index: 10;
 }
 
-#riodejaneiroserracabo .major.titulo-roteiro {
-  position: absolute !important;
-}
+#riodejaneiroserracabo .titulo-roteiro {
+  border-bottom: none;
 }
 
 #riodejaneiroserracabo {
   position: relative;
-  padding-top: 80px; /* cria espaço pro título */
+  padding-top: 80px;
 }
