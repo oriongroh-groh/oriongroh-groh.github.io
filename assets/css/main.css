@@ -1664,13 +1664,19 @@ input, select, textarea {
   position: absolute;
   top: 60px;
   right: 30px;
+  left: auto;            /* 🔥 força sair da esquerda */
   text-align: right;
   color: #fff;
   letter-spacing: 3px;
-  z-index: 2;
+  z-index: 10;
 }
 
 #riodejaneiroserracabo .major.titulo-roteiro {
   position: absolute !important;
 }
+}
+
+#riodejaneiroserracabo {
+  position: relative;
+  padding-top: 80px; /* cria espaço pro título */
 }
